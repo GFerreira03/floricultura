@@ -5,7 +5,7 @@
 .login-form {
   display: inline-block;
   flex-direction: column;
-  border: solid #688A3D;
+  border: solid var(--verde);
   border-width: 1px 1px 3px 1px;
   padding: 2rem;
   margin: auto;
@@ -37,7 +37,7 @@
 
 .fields input {
   border-width: 0 0 2px 0;
-  border-color: #EB693E;
+  border-color: var(--laranja);
   width: 100%;
   padding: .5rem 0;
   margin-top: .5rem;
@@ -57,20 +57,20 @@
 .buttons button {
   border: none;
   background-color: white;
-  color: #688A3D;
+  color: var(--verde);
   font-family: 'Belleza';
   font-size: 1.2em;
   cursor: pointer;
 }
 
 .buttons .primary {
-  background-color: #688A3D;
+  background-color: var(--verde);
   border: none;
   color: white;
   padding: .5rem 1rem;
 }
 
 .buttons .secondary:hover {
-  border: solid #688A3D;
+  border: solid var(--verde);
   border-width: 0 0 1px 0;
 }
