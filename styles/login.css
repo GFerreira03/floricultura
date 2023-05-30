@@ -5,12 +5,13 @@
 .login-form {
   display: inline-block;
   flex-direction: column;
+  margin: auto;
+  margin-top: 10rem;
   border: solid var(--verde);
   border-width: 1px 1px 3px 1px;
   padding: 2rem;
-  margin: auto;
   font-family: 'Belleza';
-  width: 17rem;
+  width: 20rem;
 }
 
 .head .title {
@@ -18,9 +19,20 @@
   font-weight: 400;
 }
 
+.title {
+  font-size: 2em;
+}
+
 .head {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.head img {
+  width: 3rem;
+  margin-bottom: 1rem;
 }
 
 .fields {
@@ -51,7 +63,7 @@
   display: flex;
   justify-content: flex-end;
   gap: .7rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .buttons button {
@@ -68,6 +80,14 @@
   border: none;
   color: white;
   padding: .5rem 1rem;
+}
+
+.buttons .primary:hover {
+  background-color: rgba(104, 138, 61, 0.8);
+}
+
+.buttons .primary:active {
+  background-color: rgb(76, 100, 44);
 }
 
 .buttons .secondary:hover {
