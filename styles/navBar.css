@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #688A3D;
+    --hover-color: #8BAC60;
+    --secundary-color: #F1FFDF;
+}
+
+.bg-color-navbar{
+    background: var(--primary-color);
+}
+
+#color-nabar-white .navbar-nav .nav-link{
+    color: white;
+}
+
+#bgcolor-navbar{
+    background-color: var(--primary-color);
+}
+
+#color-item{
+    color: white;
+}
+#color-item:hover{
+    background-color: var(--hover-color);
+}
