@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
 </head>
 <body>
-    
-    <object data="./navBar.html" style="width: 100%;"></object>
+    <div id="navbar-placeholder"></div>
+    <object id="navbar" data="./navBar.html" style="width: 100%;"></object>
     
 
+    <div class="card-cadastro">
+        <img id="flor-de-cadastro" src="../assets/imgs/flor-de-cadastro.png" alt="">
+        <div class="flex-box">
+            <h1>Cadastro</h1>
+            <div class="fields">
+                <div>
+                    <p>Nome</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Sobrenome</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>CEP</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Senha</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Confirmar senha</p>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        $(function(){
+          $("#navbar-placeholder").load("./navBar.html");
+        });
+    </script>
     <script src="./js/script.js"></script>
 </body>
 </html>
