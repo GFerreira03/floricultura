@@ -1,0 +1,18 @@
+@import url(../styles/general.css);
+body{
+    background-color: var(--primary-color);
+    color: white;
+    height: 162px;
+}
+
+
+
+div#informacaoes{
+    display: flex;
+    flex-direction: row;
+}
+
+div#informacaoes div{
+    margin-left: auto;
+    margin-right: auto;
+}
