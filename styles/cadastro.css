@@ -18,9 +18,46 @@ body {
 }
 
 .fields {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    align-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    
 }
+
+.fields div {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.fields div input{
+    width: 90%;
+    margin: auto;
+}
+
+
+.fields div#nome {
+    width: 35%;
+}
+.fields div#sobrenome {
+    width: 55%;
+}
+
+
+.fields div#email{
+    width: 60%;
+    margin-right: 40%;
+}
+
+
+.fields div#senha{
+    width: 45%;
+}
+.fields div#senha-confirm{
+    width: 45%;
+}
+
+
+
 
 .flex-box {
     display: flex;

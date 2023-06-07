@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=KoHo:wght@400;600;700&display=swap');
 
 :root {
-  --verde: #688A3D;
-  --laranja: #EB693E;
+  --primary-color: #688A3D;
+  --hover-color: #8BAC60;
+  --secundary-color: #F1FFDF;
 }
