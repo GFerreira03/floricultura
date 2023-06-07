@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../styles/bootstrap.css">
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
-    <object id="navbar" data="./navBar.html" style="width: 100%;"></object>
+    <object class="header-object" id="footer" data="./header.html" style="width: 100%;"></object>
     
+
+    
+
 
     <div class="card-cadastro">
         <img id="flor-cadastro" src="../assets/imgs/flor-cadastro.png" alt="">
@@ -51,24 +53,18 @@
 
     </div>
 
-    <div id="background">
-        <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
-            <path d="M0 50 Q250 0 500 50 T1000 50 V100 H0 Z" fill="var(--hover-color)" />
-        </svg>     
-        <div id="rectangle"></div>
+    <div id="bottom">
+        <div id="background">
+            <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+                <path d="M0 50 Q250 0 500 50 T1000 50 V100 H0 Z" fill="var(--hover-color)" />
+            </svg>     
+            <div id="rectangle"></div>
+        </div>
+        
+        <object class="footer-object" id="footer" data="./footer.html" style="width: 100%;"></object>
     </div>
 
-
-
-    <object id="footer" data="./footer.html" style="width: 100%;"></object>
-
-
-
-    <script>
-        $(function(){
-          $("#navbar-placeholder").load("./navBar.html");
-        });
-    </script>
+    
     <script src="./js/script.js"></script>
 </body>
 </html>

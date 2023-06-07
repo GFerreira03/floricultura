@@ -5,6 +5,8 @@ body {
 }
 
 .card-cadastro {
+    z-index: 9;
+    background-color: white;
     display: flex;
     margin: auto;
 
@@ -12,6 +14,11 @@ body {
     border-radius: 6px 0px 0px 6px;
     width: 573px;
     height: 371px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .card-cadastro #flor{
     height: 100%;
@@ -76,10 +83,29 @@ input {
 
 
 
-
+div#background {
+    margin-top: auto;
+}
 
 div#background #rectangle {
     width: 100%;
     height: 100px;
     background-color: var(--hover-color);
+}
+
+.header-object {
+    width: 100%;
+    height: 200px;
+    overflow: hidden; 
+}
+.footer-object {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; 
+}
+
+div#bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
