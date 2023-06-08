@@ -7,14 +7,21 @@
 .destaques {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
   margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.destaques h1 {
+  margin-left: 20rem;
+  font-size: 3.5em;
 }
 
 .destaques-grid {
   display: flex;
   justify-content: center;
+  margin: auto;
   gap: 5rem;
 }
 
@@ -26,11 +33,11 @@
 .destaque-descricao {
   background-color: var(--primary-color);
   padding: .5em .8em;
+  color: white;
 }
 
 .card-nome,
 .card-preco {
-  color: white;
   margin: 0;
 }
 
@@ -45,4 +52,40 @@
 
 .destaque-descricao .card-preco {
   font-size: 1.7em;
+}
+
+.produtos {
+  background-color: var(--hover-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.produtos h1 {
+  margin-left: 20rem;
+  color: white;
+  font-size: 3.5em;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 16rem);
+  gap: 4rem;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.produtos-card {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.produtos-card img {
+  width: 100%;
+}
+
+.produtos-descricao {
+  background-color: white;
+  color: var(--primary-color);
+  padding: .5em .8em;
 }
