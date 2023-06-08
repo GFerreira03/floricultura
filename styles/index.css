@@ -1,0 +1,48 @@
+@import url('./general.css');
+
+* {
+  font-family: 'Belleza';
+}
+
+.destaques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.destaques-grid {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.destaque-card {
+  /* border: 1px var(--primary-color) solid; */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.destaque-descricao {
+  background-color: var(--primary-color);
+  padding: .5em .8em;
+}
+
+.card-nome,
+.card-preco {
+  color: white;
+  margin: 0;
+}
+
+.card-preco {
+  font-family: 'Bebas Neue';
+}
+
+.destaque-descricao .card-nome {
+  font-size: 1.7em;
+  text-overflow: ellipsis;
+}
+
+.destaque-descricao .card-preco {
+  font-size: 1.7em;
+}
