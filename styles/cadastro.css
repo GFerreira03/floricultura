@@ -26,15 +26,21 @@ body {
 
 .fields {
     display: flex;
+    flex-direction: row;
     align-content: flex-start;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
-    
+    flex-grow: 1;
+    row-gap: 10px;    
 }
 
 .fields div {
     margin-left: 2%;
     margin-right: 2%;
+    
+}
+.fields div p{
+    margin-bottom: 0;
 }
 .fields div input{
     width: 90%;
@@ -77,7 +83,19 @@ input {
     border-color: var(--primary-color);
 }
 
+button#finalizar {
+    width: 100px;
+    border-width: 0px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: var(--hover-color);
+    color: var(--secundary-color);
+    margin: 5px;
 
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}
 
 
 
@@ -108,4 +126,16 @@ div#bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+
+
+@media(max-width: 600px) {
+    #flor-cadastro {
+        display: none;
+    }
+
+    .card-cadastro{
+        width: 90%;
+    }
 }

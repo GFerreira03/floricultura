@@ -1,4 +1,6 @@
 @import url("../styles/general.css");
+@import url("../styles/bootstrap.css");
+
 
 .bg-color-navbar{
     background: var(--primary-color);
