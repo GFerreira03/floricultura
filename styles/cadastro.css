@@ -22,7 +22,8 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.card-cadastro #flor{
+
+.card-cadastro #flor {
     height: 100%;
 }
 
@@ -33,18 +34,20 @@ body {
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     flex-grow: 1;
-    row-gap: 10px;    
+    row-gap: 10px;
 }
 
 .fields div {
     margin-left: 2%;
     margin-right: 2%;
-    
+
 }
-.fields div p{
+
+.fields div p {
     margin-bottom: 0;
 }
-.fields div input{
+
+.fields div input {
     width: 90%;
     margin: auto;
 }
@@ -53,21 +56,23 @@ body {
 .fields div.nome {
     width: 35%;
 }
+
 .fields div.sobrenome {
     width: 55%;
 }
 
 
-.fields div.email{
+.fields div.email {
     width: 60%;
     margin-right: 40%;
 }
 
 
-.fields div.senha{
+.fields div.senha {
     width: 45%;
 }
-.fields div.senha-confirm{
+
+.fields div.senha-confirm {
     width: 45%;
 }
 
@@ -115,7 +120,7 @@ div#background #rectangle {
     position: absolute;
     bottom: 0;
     width: 100%;
- }
+}
 
 
 @media(max-width: 600px) {
@@ -123,7 +128,7 @@ div#background #rectangle {
         display: none;
     }
 
-    .card-cadastro{
+    .card-cadastro {
         width: 90%;
         position: static;
         margin-top: 30px;
@@ -135,7 +140,7 @@ div#background #rectangle {
     }
 
 
-    
+
 
     body {
         height: 800px;
@@ -147,7 +152,7 @@ div#background #rectangle {
         height: 470px;
     }
 
-    .fields div.field-div  {
+    .fields div.field-div {
         width: 80%;
         margin-right: 0%;
     }
