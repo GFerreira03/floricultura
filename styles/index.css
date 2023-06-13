@@ -33,6 +33,7 @@
 
 .destaque-card:hover {
   /* Pensar num efeito brabo */
+  text-decoration: none;
 }
 
 .destaque-descricao {
