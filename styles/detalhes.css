@@ -1,18 +1,22 @@
-@import url(./general.css);
+@import url('./general.css');
 
+* {
+    box-sizing: border-box;
+}
 
-.detalhes-flor{
-    max-width: 1200px;
+.detalhes-flor {
+    max-width: 500px;
+
     margin: 0 auto;
 }
 
-.foto-flor{
+.foto-flor {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.detalhe-borda{
+.detalhe-borda {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -21,44 +25,78 @@
     border-top: none;
 }
 
-.detalhes-flor-main{
+.detalhes-flor-main {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.nome-flor h3{
+.box-shadow {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nome-flor {
+    text-align: center;
+}
+
+.nome-flor h3 {
     text-align: center;
     color: var(--salmao-color);
     font-size: 30px;
+    font-family: "Belleza";
 }
 
-.detalhes-compra{
+.nome-flor p {
+    font-family: "Belleza";
+    font-size: 20px;
+}
+
+.detalhes-compra {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
     margin: 0 auto;
 }
 
-.unidades-compra{
+
+.unidades-compra {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-input {
+
+.preco {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: 'Bebas Neue';
+}
+
+
+#quantity {
     all: unset;
-}
-
-#quantity{
     width: 25px;
-    height: 30px;
-    border: 1px solid green;
+    height: 39px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 1px 5px;
+    font-family: 'Bebas Neue';
+    padding-left: 10px;
+
 }
 
-.detalhes-compra-button{
+.detalhes-compra-button {
+    font-family: "Belleza";
+    font-size: 20px;
     padding: 10px;
-    background-color: green;
+    color: white;
+    cursor: pointer;
+    background-color: var(--primary-color);
     border: none;
+}
+
+.voltar{
+    text-align: right;
+    text-decoration: none;
+    color: var(--primary-color);
 }
