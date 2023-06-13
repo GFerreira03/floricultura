@@ -1,0 +1,64 @@
+@import url(./general.css);
+
+
+.detalhes-flor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foto-flor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.detalhe-borda{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border: 4px solid var(--primary-color);
+    border-top: none;
+}
+
+.detalhes-flor-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome-flor h3{
+    text-align: center;
+    color: var(--salmao-color);
+    font-size: 30px;
+}
+
+.detalhes-compra{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.unidades-compra{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+input {
+    all: unset;
+}
+
+#quantity{
+    width: 25px;
+    height: 30px;
+    border: 1px solid green;
+    padding: 1px 5px;
+}
+
+.detalhes-compra-button{
+    padding: 10px;
+    background-color: green;
+    border: none;
+}
