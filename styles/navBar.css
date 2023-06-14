@@ -1,13 +1,54 @@
 @import url("../styles/general.css");
 @import url("../styles/bootstrap.css");
 
-
-.bg-color-navbar{
-    background: var(--primary-color);
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a.nav-link {
+    text-align: right;
 }
 
-#color-nabar-white .navbar-nav .nav-link{
-    color: white;
+#bg-navbar{
+    background-color: var(--primary-color);
+}
+
+
+
+#bg-navbar ul li a.nav-link{
+    color: white
+}
+
+#bg-navbar ul li {
+    margin-right: 1vw;
+    border-radius: 10px;
+}
+#bg-navbar ul li:hover{
+    background-color: var(--hover-color);
+
+}
+
+#form-pesquisa{
+    display: flex;
+    justify-content: end;
+}
+
+.form-control, .form-control:focus{
+    background-color: var(--secundary-color);
+}
+
+.form-control:focus{
+    border-color: white;
+    box-shadow: none;
+}
+
+#icones-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#color-navbar-white{
+    background-color: var(--text-color);
 }
 
 #bgcolor-navbar{
@@ -19,4 +60,53 @@
 }
 #color-item:hover{
     background-color: var(--hover-color);
+}
+
+#form-pesquisa-mobile {
+    display: none;
+}
+
+
+
+#icones-row li{
+    border-radius: 50%;
+    border: 2px solid transparent;
+    
+}
+#icones-row li:hover{
+    border: 2px solid var(--primary-color);
+    background-color: var(--secundary-color);
+    
+}
+
+.navbar-toggler:focus{
+    border: 1px solid white;
+    box-shadow: none;
+    outline: 0;
+}
+@media (min-width: 575px) and  (max-width:695px){
+    #form-pesquisa{
+        width: 22%;
+    }
+    
+    #form-pesquisa input{
+        width: 100%;
+    }
+    #bg-navbar ul li{
+        margin-right: 0vw;
+    }
+}
+
+@media (max-width: 575px) {
+    #form-pesquisa{
+        display: none;
+    }
+    #form-pesquisa-mobile {
+        display: block;
+        width: 75%;
+    }
+    #bg-navbar ul li{
+        padding-right: 10px;
+    }
+    
 }
