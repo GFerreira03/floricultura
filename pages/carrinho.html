@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <title>Carrinho de compras</title>
@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/navBar.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="../styles/carrinho.css"
+    <link rel="stylesheet" href="../styles/carrinho.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 
 <body>
@@ -88,7 +89,7 @@
                             <h4>Astromelia</h4>
                             <p class="price">R$ 59,90</p>
                         </div>
-                        <input type="number">
+                        <input type="number" class="quant">
                         <h5 id="total-cart">R$120</h5>
                         <a id="delete">X</a>
                     </li>
@@ -98,7 +99,7 @@
                             <h4>Ave do Paraiso</h4>
                             <p>R$ 29,90</p>
                         </div>
-                        <input type="number">
+                        <input type="number" class="quant">
                         <h5 id="total-cart">R$120</h5>
                         <a id="delete">X</a>
                     </li>
@@ -108,19 +109,34 @@
                             <h4>Gengibre Vermelho</h4>
                             <p>R$ 79,90</p>
                         </div>
-                        <input type="number">
+                        <input type="number" class="quant">
                         <h5 id="total-cart">R$120</h5>
                         <a id="delete">X</a>
                     </li>
                 </ul>
                 <div class="info-payments" >
-                    <h3>Informacoes gerais</h3>
+                    <h3>Informações Gerais</h3>
                     <p>3 PRODUTOS</p>
-                    <p style="font-size:larger; font-weight: bold;">Total: R$ 480</p>
+                    <p class="total-payments">Total: R$ 480</p>
                     <button>Realizar compra</button>
                 </div>
             </div>
     </main>
+    
+
+    <footer id="informacoes">
+        <div id="contatos">
+            <h2>Contatos</h2>
+            <p>algumemail@ficticio.com.br</p>
+            <p>(99) 99999-9999</p>
+        </div>
+        
+        <div id="links">
+            <h2>Links Úteis</h2>
+            <a href="">Sobre nós</a>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
