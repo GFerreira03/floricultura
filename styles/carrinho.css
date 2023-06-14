@@ -1,0 +1,54 @@
+.produtos-cart{
+    list-style: none;
+    display: block;
+}
+
+.produtos-cart > li {
+    display: flex;
+    border: solid black 1px;
+    align-items: center;
+    gap: 2em;
+    padding: 1%;
+    position: relative;
+
+}
+
+#img-cart{
+    max-height: 150px;
+}
+
+#total-cart{
+    color: darkorange
+}
+
+#delete{
+position: absolute;
+top: 5px;
+right: 6px;
+
+}
+
+.grid-cart{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: auto;
+}
+
+.info-payments{
+    background-color: #F2F2F2;
+    padding: 30px;
+    align-self: center;
+}
+
+.info-payments button{
+    width: 100%;
+}
+
+.title-cart{
+    margin: 50px;
+}
+
+.detalhes-cart{
+    width: 7em;
+}
