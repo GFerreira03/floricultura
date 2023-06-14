@@ -50,6 +50,15 @@ body {
 .fields div input {
     width: 90%;
     margin: auto;
+    border-width: 0 0 2px 0;
+    border-color: var(--hover-color);
+}
+
+
+.fields div input:focus {
+    outline: 0;
+    border-color: var(--primary-color);
+    
 }
 
 
@@ -85,10 +94,6 @@ body {
     padding-left: 20px;
 }
 
-input {
-    border-width: 0 0 2px 0;
-    border-color: var(--primary-color);
-}
 
 button#finalizar {
     width: 100px;
@@ -100,7 +105,11 @@ button#finalizar {
     margin: 5px;
     align-self: flex-end;
 }
-
+button#finalizar:focus{
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+    outline: 0;
+}
 
 
 
