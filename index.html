@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/navBar.css">
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="../styles/bootstrap.css">
   <link rel="shortcut icon" href="./assets/icons/logo-icon.png" type="image/x-icon">
   <title>Floricultura</title>
 </head>
@@ -17,28 +16,34 @@
 
   <main>
     <section class="destaques">
-      <h1>Destaques</h1>
-      <div class="destaques-grid">
+      <h1 class="section-title">Destaques</h1>
+      <div class="destaques-flex">
 
-        <a class="destaque-card" href="./pages/detalhes.html">
-          <img src="./assets/imgs/gengibre-vermelho.png" alt="">
-          <div class="destaque-descricao">
-            <h4 class="card-nome">Gengibre Vermelho</h4>
-            <h4 class="card-preco">R$ 39,90</h4>
+        <a href="./pages/detalhes.html" class="destaque-card">
+          <div class="img-container">
+            <img src="assets/imgs/gengibre-vermelho.png" alt="">
+          </div>
+          <div class="destaque-details">
+            <h3 class="card-name">Gengibre Vermelho</h3>
+            <h3 class="card-price">R$ 39,90</h3>
           </div>
         </a>
-        <a class="destaque-card">
-          <img src="./assets/imgs/astromelia.jpg" alt="">
-          <div class="destaque-descricao">
-            <h4 class="card-nome">Astromélia</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="./pages/detalhes.html" class="destaque-card">
+          <div class="img-container">
+            <img src="assets/imgs/astromelia.jpg" alt="">
+          </div>
+          <div class="destaque-details">
+            <h3 class="card-name">Astromélia</h3>
+            <h3 class="card-price">R$ 59,90</h3>
           </div>
         </a>
-        <a class="destaque-card">
-          <img src="./assets/imgs/ave-do-paraiso.png" alt="">
-          <div class="destaque-descricao">
-            <h4 class="card-nome">Ave-do-paraíso</h4>
-            <h4 class="card-preco">R$ 79,90</h4>
+        <a href="./pages/detalhes.html" class="destaque-card">
+          <div class="img-container">
+            <img src="./assets/imgs/ave-do-paraiso.png" alt="">
+          </div>
+          <div class="destaque-details">
+            <h3 class="card-name">Ave do paraíso</h3>
+            <h3 class="card-price">R$ 54,90</h3>
           </div>
         </a>
 
@@ -50,82 +55,96 @@
     </svg>
 
     <section class="produtos">
-      <h1>Conheça nossas flores</h1>
-      <div class="produtos-grid">
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/jasmin-manga.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Jasmin manga</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+      <h1 class="section-title">Conheça nossas outras flores</h1>
+      <div class="produtos-flex">
+
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/bastao-do-imperador.jpg" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Bastão do imperador</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/bastao-do-imperador.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Bastão do imperador</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/bromelia.jpg" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Bromélia</h3>
+            <h3 class="card-price">R$ 42,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/ciclame.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Ciclame</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/cana-da-india.png" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Cana da índia</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/trombeta-de-anjo.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Trombeta de anjo</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/hibisco.png" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Hibísco</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/bromelia.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Bromélia</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/ciclame.jpg" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Ciclame</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/astromelia.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Astromélia</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/crisantemo.png" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Crisântemo</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/astromelia.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Astromélia</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/trombeta-de-anjo.jpg" alt="">
+          </div>
+          <div class="produto-details">
+            <h3 class="card-name">Trombeta de anjo</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
-        <a class="produtos-card" href="#">
-          <img src="./assets/imgs/astromelia.jpg" alt="">
-          <div class="produtos-descricao">
-            <h4 class="card-nome">Astromélia</h4>
-            <h4 class="card-preco">R$ 59,90</h4>
+        <a href="#" class="produtos-card">
+          <div class="img-container">
+            <img src="assets/imgs/jasmin-manga.jpg" alt="">
+          </div>
+          <div class=" produto-details">
+            <h3 class="card-name">Jasmin manga</h3>
+            <h3 class="card-price">R$ 37,90</h3>
           </div>
         </a>
+
       </div>
     </section>
 
   </main>
 
+  <div class="access-configs">
+    <img src="assets/icons/dark-theme.svg" alt="">
+    <img src="assets/icons/resize.png" alt="">
+  </div>
+
   <footer>
     <div id="footer" class="include" path="./pages/footer.html"></div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
   <script src="./scripts/script.js"></script>
 </body>
 
