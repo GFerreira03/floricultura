@@ -91,7 +91,9 @@
 }
 
 .produtos-card img {
-  width: 100%;
+  width: 256px;
+  height: 383px;
+  object-fit: cover;
 }
 
 .produtos-descricao {
