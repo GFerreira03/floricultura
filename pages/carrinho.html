@@ -13,69 +13,59 @@
 </head>
 
 <body>
-    <nav class="logo">
-        <img src="../assets/icons/logo-icon.png">
-    </nav>
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light
+        white-navbar" id="color-navbar-white">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/icons/logo-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                FLORES TROPICAIS
+            </a>
 
-
-
-    <nav class="navbar navbar-expand-lg navbar-light
-    bg-color-navbar" id="color-nabar-white">
-        <div class="collapse navbar-collapse d-flex justify-content-center " id="conteudoNavbarSuportado">
-            <ul class="navbar-nav md-auto mr-sm-5">
-                <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tipo de Flores
-                    </a>
-                    <div id="bgcolor-navbar" class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a id="color-item" class="dropdown-item" href="#">Mais Conhecidas</a>
-                        <a id="color-item" class="dropdown-item" href="#">Mais Vendidas</a>
-                        <a id="color-item" class="dropdown-item" href="#"></a>
-                    </div>
+            <ul id="icones-row" class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/carrinho.html"><img src="../assets/icons/carrinho.png"
+                            alt=""></a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Buques de Flores
-                    </a>
-                    <div id="bgcolor-navbar" class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a id="color-item" class="dropdown-item" href="#">Mais vendidos</a>
-                        <a id="color-item" class="dropdown-item" href="#">Pré-Montado</a>
-                        <a id="color-item" class="dropdown-item" href="#">Monte seu</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cesta de Presentes
-                    </a>
-                    <div id="bgcolor-navbar" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a id="color-item" class="dropdown-item" href="#">Mais Populares</a>
-                        <a id="color-item" class="dropdown-item" href="#">Pré-montado</a>
-                        <a id="color-item" class="dropdown-item" href="#">Monte Seu</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Ocasiões
-                    </a>
-                    <div id="bgcolor-navbar" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a id="color-item" class="dropdown-item" href="#">Presente</a>
-                        <a id="color-item" class="dropdown-item" href="#">Outra ação</a>
-                        <a id="color-item" class="dropdown-item" href="#">Algo mais aqui</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/cadastro.html"><img src="../assets/icons/profile.png" alt=""></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-    </form>
-        </div>
+        </nav>
 
+        <nav id="bg-navbar" class="navbar navbar-expand-sm navbar-dark">
+            <form id="form-pesquisa-mobile" class="form-inline my-2 my-lg-0 mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            </form>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="1.5em" height="1.5em" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M6,22h36v4h-36zM6,10h36v4h-36zM6,34h36v4h-36z"></path></g></g></svg>
+            </button>
 
-    </nav>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buquês de flores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cesta de presentes</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ocasiões</a>
+                    </li>
+                </ul>
+                <form id="form-pesquisa" class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                </form>
+            </div>
+        </nav>
+
+    </header>
     <main>
         <div class="title-cart">
             <h2>Meu carrinho</h2>
