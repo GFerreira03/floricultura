@@ -2,7 +2,6 @@
 @import url("../styles/bootstrap.css");
 
 header{
-    max-width: 1200px;
     margin: 0 auto;
 }
 a.nav-link {
