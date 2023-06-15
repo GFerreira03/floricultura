@@ -6,6 +6,8 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/access-configs.css">
+    <link rel="stylesheet" href="../styles/darkmode.css">
     <link rel="shortcut icon" href="../assets/icons/logo-icon.png" type="image/x-icon">
 
 </head>
@@ -44,11 +46,11 @@
                 </div>
                 <div class="field-div senha">
                     <p>Senha</p>
-                    <input type="text">
+                    <input type="password">
                 </div>
                 <div class="field-div senha-confirm">
                     <p>Confirmar senha</p>
-                    <input type="text">
+                    <input type="password">
                 </div>
             </div>
             <button id="finalizar">Finalizar</button>
@@ -58,6 +60,11 @@
         </div>
 
 
+    </div>
+
+    <div class="access-configs">
+        <img id="theme-toggle" src="../assets/icons/dark-theme.svg" alt="">
+        <img src="../assets/icons/resize.png" alt="">
     </div>
 
     <footer id="bottom">
@@ -71,7 +78,7 @@
         <div id="footer" class="include" path="./footer.html"></div>
     </footer>
 
-
+    <script src="../scripts/darktheme.js"></script>
     <script src="../scripts/script.js"></script>
 
 
