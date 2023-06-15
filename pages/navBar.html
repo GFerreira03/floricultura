@@ -6,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/darkmode.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light
-        white-navbar" id="color-navbar-white">
+        white-navbar">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/icons/logo-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                FLORES TROPICAIS
+                <span>FLORES TROPICAIS</span>
             </a>
 
-            <ul id="icones-row" class="navbar-nav ml-auto" >
+            <ul id="icones-row" class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="../pages/carrinho.html"><img src="../assets/icons/carrinho.png"
                             alt=""></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/cadastro.html"><img src="../assets/icons/profile.png" alt=""></a>
+                <li class="nav-item login-button">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><img
+                            src="../assets/icons/profile.png" alt=""></a>
                 </li>
             </ul>
         </nav>
@@ -33,10 +36,21 @@
             <form id="form-pesquisa-mobile" class="form-inline my-2 my-lg-0 mr-auto">
                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
             </form>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="1.5em" height="1.5em" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M6,22h36v4h-36zM6,10h36v4h-36zM6,34h36v4h-36z"></path></g></g></svg>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                aria-label="Alterna navegação">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                    width="1.5em" height="1.5em" fill-rule="nonzero">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.33333,5.33333)">
+                            <path d="M6,22h36v4h-36zM6,10h36v4h-36zM6,34h36v4h-36z"></path>
+                        </g>
+                    </g>
+                </svg>
             </button>
 
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -49,7 +63,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cesta de presentes</a>
-                        
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ocasiões</a>
@@ -63,6 +77,42 @@
 
     </header>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <div class="modal-header-container">
+                        <img class="login-logo" src="../assets/icons/logo-icon.png" alt="">
+                        <h1>FLORES TROPICAIS</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="field-list">
+                        <div class="field">
+                            <h3>Email</h3>
+                            <input type="text" name="email" id="">
+                        </div>
+                        <div class="field">
+                            <h3>Senha</h3>
+                            <input type="password" name="senha" id="">
+                        </div>
+                        <label for="lembrarsenha">
+                            <input type="checkbox" id="lembrarsenha" name="lembrarsenha">
+                            Lembrar senha
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button-container">
+                        <a href="../pages/cadastro.html">Criar conta</a>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -72,6 +122,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script src="../scripts/darktheme.js"></script>
+    <script src="../scripts/loginform-handler.js"></script>
 
 </body>
 

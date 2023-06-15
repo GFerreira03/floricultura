@@ -17,6 +17,7 @@ themeToggle.addEventListener('click', function () {
 
   // Atualiza a classe do body para refletir o novo tema
   document.body.classList.toggle('dark-theme', newTheme === 'dark');
+  document.querySelector('.navbar-brand').classList.toggle('dark-theme', newTheme === 'dark')
 
   // Armazena a preferência do usuário no LocalStorage
   localStorage.setItem('theme', newTheme);

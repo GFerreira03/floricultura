@@ -1,96 +1,70 @@
-.center {
-  display: flex;
-}
-
 .login-form {
-  display: inline-block;
-  flex-direction: column;
-  margin: auto;
-  margin-top: 10rem;
-  border: solid var(--verde);
-  border-width: 1px 1px 3px 1px;
-  padding: 2rem;
-  font-family: 'Belleza';
-  width: 20rem;
-}
-
-.head .title {
-  margin: 0 0 1rem 0;
-  font-weight: 400;
-}
-
-.title {
-  font-size: 2em;
-}
-
-.head {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1rem;
+
+  padding: 2.5rem;
+  width: 28rem;
+  border: 1px solid var(--primary-color);
+  border-bottom-width: 4px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.head img {
-  width: 3rem;
-  margin-bottom: 1rem;
-}
-
-.fields {
+.modal-header-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo {
+  --logo-size: 4rem;
+  max-width: var(--logo-size);
+  max-height: var(--logo-size);
+  margin-bottom: .5rem;
+}
+
+.field-list {
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
   flex-direction: column;
   gap: 1rem;
 }
 
-.fields h3 {
-  margin: 0;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.fields input {
-  border-width: 0 0 2px 0;
-  border-color: var(--laranja);
+.field input {
   width: 100%;
-  padding: .5rem 0;
-  margin-top: .5rem;
+  border: none;
+  border-bottom: 1px solid var(--salmao-color);
 }
 
-.fields {
-  margin: 0 0 1rem 0;
-}
-
-.buttons {
+.button-container {
   display: flex;
   justify-content: flex-end;
-  gap: .7rem;
-  margin-top: 3rem;
+  gap: 1rem;
+  align-items: center;
 }
 
-.buttons button {
+.button-container button {
   border: none;
-  background-color: white;
-  color: var(--verde);
-  font-family: 'Belleza';
-  font-size: 1.2em;
+  padding: .3rem;
   cursor: pointer;
-}
-
-.buttons .primary {
-  background-color: var(--verde);
-  border: none;
+  background-color: var(--primary-color);
   color: white;
-  padding: .5rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.buttons .primary:hover {
-  background-color: rgba(104, 138, 61, 0.8);
+.button-container a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-.buttons .primary:active {
-  background-color: rgb(76, 100, 44);
+.button-container a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
-.buttons .secondary:hover {
-  border: solid var(--verde);
-  border-width: 0 0 1px 0;
+.button-container button:active {
+  opacity: .8;
 }

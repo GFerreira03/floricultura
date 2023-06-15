@@ -1,10 +1,9 @@
 .access-configs {
   position: fixed;
   display: flex;
-  top: 10rem;
+  top: 9.5rem;
   left: 1rem;
   max-height: 3rem;
-  max-width: 20rem;
   background-color: rgb(255, 255, 255);
   border-radius: 3rem;
   gap: 1rem;
@@ -13,6 +12,6 @@
 }
 
 .access-configs img {
-  width: 100%;
+  height: 2rem;
   cursor: pointer;
 }

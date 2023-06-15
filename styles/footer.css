@@ -1,40 +1,47 @@
 @import url(../styles/general.css);
+
+* {
+    font-family: 'Belleza';
+}
+
 a {
     color: var(--text-color);
     text-decoration: none;
 }
+
 a:hover {
     font-weight: bold;
     color: var(--text-color);
 }
 
 
-#informacoes{
+#informacoes {
     display: flex;
     flex-direction: row;
     background-color: var(--primary-color);
-    color: white; 
+    color: white;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-#informacoes div{
+#informacoes div {
     text-align: center;
     margin: 14px auto 14px auto;
 }
-#informacoes div *{
+
+#informacoes div * {
     margin-bottom: 3px;
 }
 
 
 @media (max-width: 600px) {
-    #informacoes{
+    #informacoes {
         flex-direction: column;
         padding: 0%;
     }
+
     #produtos {
         display: none;
     }
 
 }
-

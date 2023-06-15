@@ -4,9 +4,17 @@ body {
 }
 
 body.dark-theme {
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(31, 41, 33);
 }
 
 body.dark-theme .section-title {
   color: rgb(255, 255, 255);
+}
+
+.navbar-brand.dark-theme {
+  color: black;
+}
+
+.navbar-brand.dark-theme {
+  color: white;
 }
