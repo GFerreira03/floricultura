@@ -31,11 +31,11 @@
   text-decoration: none;
 }
 
-.destaque-card h3{
+.destaque-card h3 {
   color: white;
 }
 
-.card-price{
+.card-price {
   font-family: "Bebas Neue";
   font-size: 30px;
 }
@@ -112,6 +112,7 @@
 
 .produto-details h3 {
   font-size: 1.5rem;
+<<<<<<< HEAD
 }
 
 .access-configs {
@@ -139,4 +140,6 @@ body.dark{
 }
 #sec-prod.dark{
   background-color: #2a2a2a;
+=======
+>>>>>>> b78ac6961c9c2c121f13838fc9f43d3b04accf55
 }
