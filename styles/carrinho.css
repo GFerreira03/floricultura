@@ -1,11 +1,27 @@
+@import url('./general.css');
+
+<<<<<<< HEAD
+h4, h3, h2, .info-payments p, button{
+    font-family: "Belleza";
+}
+
+=======
+>>>>>>> b78ac6961c9c2c121f13838fc9f43d3b04accf55
 .produtos-cart{
     list-style: none;
     display: block;
 }
 
+.produtos-cart p, .total-payments, .total-cart{
+    font-family: "Bebas Neue";
+}
+
+.grid-cart {
+    margin-bottom: 200px;
+}
+
 .produtos-cart > li {
     display: flex;
-    border: solid black 1px;
     align-items: center;
     gap: 2em;
     padding: 1%;
@@ -15,6 +31,7 @@
 
 #img-cart{
     max-height: 150px;
+    border: solid 1px #688A3D;
 }
 
 #total-cart{
@@ -40,9 +57,12 @@ right: 6px;
     padding: 30px;
     align-self: center;
     max-width: 100%;
+    max-width: 100%;
 }
 
 .info-payments button{
+    max-width: 100%;
+
     max-width: 100%;
 
 }
@@ -54,6 +74,9 @@ right: 6px;
 .detalhes-cart{
     width: 7em;
 }
+.total-payments{
+    font-weight: bold;
+    font-size: 25px;
 
 .total-payments{
     font-weight: bold;
@@ -105,4 +128,5 @@ right: 6px;
     .info-payments p {
         font-size: 14px;
     }
+}
 }

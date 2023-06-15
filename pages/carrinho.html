@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="../styles/carrinho.css">
     <link rel="stylesheet" href="../styles/footer.css">
+
 </head>
 
 <body>
+<<<<<<< HEAD
 
+    <div id="navBar" class="include" path="./navBar.html"></div>
+=======
     <header>
         <nav class="navbar navbar-expand-lg navbar-light
         white-navbar" id="color-navbar-white">
@@ -21,51 +25,9 @@
                 <img src="../assets/icons/logo-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 FLORES TROPICAIS
             </a>
+>>>>>>> b78ac6961c9c2c121f13838fc9f43d3b04accf55
 
-            <ul id="icones-row" class="navbar-nav ml-auto" >
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/carrinho.html"><img src="../assets/icons/carrinho.png"
-                            alt=""></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/cadastro.html"><img src="../assets/icons/profile.png" alt=""></a>
-                </li>
-            </ul>
-        </nav>
-
-        <nav id="bg-navbar" class="navbar navbar-expand-sm navbar-dark">
-            <form id="form-pesquisa-mobile" class="form-inline my-2 my-lg-0 mr-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            </form>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="1.5em" height="1.5em" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M6,22h36v4h-36zM6,10h36v4h-36zM6,34h36v4h-36z"></path></g></g></svg>
-            </button>
-
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Buquês de flores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cesta de presentes</a>
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ocasiões</a>
-                    </li>
-                </ul>
-                <form id="form-pesquisa" class="form-inline my-2 my-lg-0 ml-auto">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                </form>
-            </div>
-        </nav>
-
-    </header>
+    
     <main>
         <div class="title-cart">
             <h2>Meu carrinho</h2>
@@ -80,7 +42,7 @@
                             <p class="price">R$ 59,90</p>
                         </div>
                         <input type="number" class="quant">
-                        <h5 id="total-cart">R$120</h5>
+                        <h5 id="total-cart">Total:R$120</h5>
                         <a id="delete">X</a>
                     </li>
                     <li>
@@ -90,7 +52,7 @@
                             <p>R$ 29,90</p>
                         </div>
                         <input type="number" class="quant">
-                        <h5 id="total-cart">R$120</h5>
+                        <h5 id="total-cart">Total:R$120</h5>
                         <a id="delete">X</a>
                     </li>
                     <li>
@@ -100,7 +62,8 @@
                             <p>R$ 79,90</p>
                         </div>
                         <input type="number" class="quant">
-                        <h5 id="total-cart">R$120</h5>
+                        <h5 id="total-cart">Total:R$120</h5>
+
                         <a id="delete">X</a>
                     </li>
                 </ul>
@@ -114,19 +77,20 @@
     </main>
     
 
-    <footer id="informacoes">
-        <div id="contatos">
-            <h2>Contatos</h2>
-            <p>algumemail@ficticio.com.br</p>
-            <p>(99) 99999-9999</p>
+    
+    <footer id="bottom">
+        <div id="background">
+            <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+                <path d="M0 50 Q250 0 500 50 T1000 50 V100 H0 Z" fill="var(--hover-color)" />
+            </svg>
+            <div id="rectangle"></div>
         </div>
-        
-        <div id="links">
-            <h2>Links Úteis</h2>
-            <a href="">Sobre nós</a>
-        </div>
+
+        <div id="footer" class="include" path="./footer.html"></div>
     </footer>
 
+
+    <script src="../scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
