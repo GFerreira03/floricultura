@@ -1,10 +1,10 @@
 .access-configs {
   position: fixed;
   display: flex;
-  flex-direction: column;
   top: 10rem;
   left: 1rem;
-  max-width: 3rem;
+  max-height: 3rem;
+  max-width: 20rem;
   background-color: rgb(255, 255, 255);
   border-radius: 3rem;
   gap: 1rem;
