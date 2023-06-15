@@ -31,11 +31,11 @@
   text-decoration: none;
 }
 
-.destaque-card h3{
+.destaque-card h3 {
   color: white;
 }
 
-.card-price{
+.card-price {
   font-family: "Bebas Neue";
   font-size: 30px;
 }
@@ -112,28 +112,4 @@
 
 .produto-details h3 {
   font-size: 1.5rem;
-}
-
-.access-configs {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: 10rem;
-  left: 1rem;
-  max-width: 3rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 3rem;
-  gap: 1rem;
-  padding: .5rem;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.access-configs img {
-  width: 100%;
-  cursor: pointer;
-}
-
-/*  */
-#sec-prod.dark{
-  background-color: #2a2a2a;
 }
