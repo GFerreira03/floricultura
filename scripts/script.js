@@ -31,6 +31,16 @@ function includeHTML() {
   }
 }
 
+const teste = document.getElementById('tema-claro');
+const produtos = document.getElementById('sec-prod');
+
+document.addEventListener('click', e =>{
+  const event = e.target;
+  if(event === teste){
+    produtos.classList.toggle('dark');
+  }
+})
+
 
 
 
