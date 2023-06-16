@@ -68,3 +68,7 @@
 .button-container button:active {
   opacity: .8;
 }
+
+#flores-tropicais:active{
+  color: transparent;
+}
