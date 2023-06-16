@@ -1,18 +1,23 @@
 @import url('./general.css');
 
-<<<<<<< HEAD
-h4, h3, h2, .info-payments p, button{
+h4,
+h3,
+h2,
+.info-payments p,
+button {
     font-family: "Belleza";
 }
 
-=======
->>>>>>> b78ac6961c9c2c121f13838fc9f43d3b04accf55
-.produtos-cart{
+.produtos-cart {
     list-style: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.produtos-cart p, .total-payments, .total-cart{
+.produtos-cart p,
+.total-payments,
+.total-cart {
     font-family: "Bebas Neue";
 }
 
@@ -20,39 +25,42 @@ h4, h3, h2, .info-payments p, button{
     margin-bottom: 200px;
 }
 
-.produtos-cart > li {
+.produtos-cart>li {
     display: flex;
     align-items: center;
     gap: 2em;
     padding: 1%;
     position: relative;
-
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-#img-cart{
+#img-cart {
     max-height: 150px;
     border: solid 1px #688A3D;
 }
 
-#total-cart{
-    color: darkorange
+#total-cart {
+    color: var(--salmao-color);
+    font-size: 1.8em;
+    font-family: 'Bebas Neue';
+    margin-bottom: 0;
 }
 
-#delete{
-position: absolute;
-top: 5px;
-right: 6px;
-
+#delete {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    cursor: pointer;
 }
 
-.grid-cart{
+.grid-cart {
     display: flex;
     gap: 50px;
     justify-content: center;
     margin: auto;
 }
 
-.info-payments{
+.info-payments {
     background-color: #F2F2F2;
     padding: 30px;
     align-self: center;
@@ -60,73 +68,92 @@ right: 6px;
     max-width: 100%;
 }
 
-.info-payments button{
-    max-width: 100%;
-
-    max-width: 100%;
+.info-payments button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: .3rem;
+    width: 100%;
+    border-radius: 0;
+    color: white;
 
 }
 
-.title-cart{
+.title-cart {
     margin: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.detalhes-cart{
-    width: 7em;
+.detalhes-cart {
+    width: 15em;
 }
-.total-payments{
+
+.detalhes-cart p {
+    font-size: 1.4em;
+}
+
+.detalhes-cart h4 {
+    font-size: 1.8em;
+}
+
+.total-payments {
     font-weight: bold;
     font-size: 25px;
 
-.total-payments{
-    font-weight: bold;
-    font-size: large;
-}
-
-@media (max-width:950px){
-    .grid-cart{
-        display: block;
+    .total-payments {
+        font-weight: bold;
+        font-size: large;
     }
 
-    .produtos-cart li{
-        border: 0;
-        border-bottom: solid 1px black;
-    }
-    .info-payments{
-        margin: auto;
+    @media (max-width:950px) {
+        .grid-cart {
+            display: block;
+        }
+
+        .produtos-cart li {
+            border: 0;
+            border-bottom: solid 1px black;
+        }
+
+        .info-payments {
+            margin: auto;
+        }
+
     }
 
-}
+    @media (max-width:600px) {
+        #img-cart {
+            max-width: 70px;
+        }
 
-@media (max-width:600px) {
-    #img-cart{
-        max-width: 70px;
-    }
+        .detalhes-cart h4,
+        #total-cart {
+            font-size: 18px;
+        }
 
-    .detalhes-cart h4,  #total-cart{
-        font-size: 18px;
-    }
-    .detalhes-cart p{
-        font-size: 12px;
-    }
-    
-    .detalhes-cart{
-        width: 70px
-    }
-    .quant{
-        width: 70px;
-    }
+        .detalhes-cart p {
+            font-size: 12px;
+        }
 
-    .produtos-cart{
-        padding: 10px
-    }
+        .detalhes-cart {
+            width: 70px
+        }
 
-    .info-payments h3, .info-payments h4{
-        font-size: 25px;
-    }
+        .quant {
+            width: 70px;
+        }
 
-    .info-payments p {
-        font-size: 14px;
+        .produtos-cart {
+            padding: 10px
+        }
+
+        .info-payments h3,
+        .info-payments h4 {
+            font-size: 25px;
+        }
+
+        .info-payments p {
+            font-size: 14px;
+        }
     }
-}
 }

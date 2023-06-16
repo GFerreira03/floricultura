@@ -7,7 +7,10 @@ body.dark-theme {
   background-color: rgb(31, 41, 33);
 }
 
-body.dark-theme .section-title {
+body.dark-theme .section-title,
+body.dark-theme .title-cart,
+body.dark-theme div.detalhes-cart,
+body.dark-theme #delete {
   color: rgb(255, 255, 255);
 }
 

@@ -1,20 +1,19 @@
 @import url("../styles/general.css");
 @import url("../styles/bootstrap.css");
 
-header{
+header {
     margin: 0 auto;
 }
+
 a.nav-link {
     text-align: right;
 }
 
-#bg-navbar{
+#bg-navbar {
     background-color: var(--primary-color);
 }
 
-
-
-#bg-navbar ul li a.nav-link{
+#bg-navbar ul li a.nav-link {
     color: white
 }
 
@@ -22,42 +21,45 @@ a.nav-link {
     margin-right: 1vw;
     border-radius: 10px;
 }
-#bg-navbar ul li:hover{
+
+#bg-navbar ul li:hover {
     background-color: var(--hover-color);
 
 }
 
-#form-pesquisa{
+#form-pesquisa {
     display: flex;
     justify-content: end;
 }
 
-.form-control, .form-control:focus{
+.form-control,
+.form-control:focus {
     background-color: var(--secundary-color);
 }
 
-.form-control:focus{
+.form-control:focus {
     border-color: white;
     box-shadow: none;
 }
 
-#icones-row{
+#icones-row {
     display: flex;
     flex-direction: row;
 }
 
-#color-navbar-white{
+#color-navbar-white {
     background-color: var(--text-color);
 }
 
-#bgcolor-navbar{
+#bgcolor-navbar {
     background-color: var(--primary-color);
 }
 
-#color-item{
+#color-item {
     color: white;
 }
-#color-item:hover{
+
+#color-item:hover {
     background-color: var(--hover-color);
 }
 
@@ -67,45 +69,50 @@ a.nav-link {
 
 
 
-#icones-row li{
+#icones-row li {
     border-radius: 50%;
     border: 2px solid transparent;
-    
-}
-#icones-row li:hover{
-    border: 2px solid var(--primary-color);
-    background-color: var(--secundary-color);
-    
+
 }
 
-.navbar-toggler:focus{
+#icones-row li:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secundary-color);
+
+}
+
+.navbar-toggler:focus {
     border: 1px solid white;
     box-shadow: none;
     outline: 0;
 }
-@media (min-width: 575px) and  (max-width:695px){
-    #form-pesquisa{
+
+@media (min-width: 575px) and (max-width:695px) {
+    #form-pesquisa {
         width: 22%;
     }
-    
-    #form-pesquisa input{
+
+    #form-pesquisa input {
         width: 100%;
     }
-    #bg-navbar ul li{
+
+    #bg-navbar ul li {
         margin-right: 0vw;
     }
 }
 
 @media (max-width: 575px) {
-    #form-pesquisa{
+    #form-pesquisa {
         display: none;
     }
+
     #form-pesquisa-mobile {
         display: block;
         width: 75%;
     }
-    #bg-navbar ul li{
+
+    #bg-navbar ul li {
         padding-right: 10px;
     }
-    
+
 }
