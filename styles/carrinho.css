@@ -121,7 +121,11 @@ button {
 
     }
 
+
+
     @media (max-width:600px) {
+
+
         #img-cart {
             max-width: 70px;
         }
@@ -155,5 +159,40 @@ button {
         .info-payments p {
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 1220px) {
+    .produtos-cart {
+        margin: 0 auto;
+    }
+
+    #grid-cart {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 910px) {
+    #grid-cart .produtos-cart {
+        width: 500px;
+        margin: 0 2px;
+    }
+
+    #grid-cart .produtos-cart li a {
+        display: none;
+    }
+
+    #grid-cart .produtos-cart li input {
+        width: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    #grid-cart .produtos-cart li h5 {
+        font-size: 20px;
+    }
+    #grid-cart .produtos-cart li{
+        gap: 10px;
     }
 }
