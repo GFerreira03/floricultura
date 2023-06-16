@@ -174,9 +174,14 @@ button {
 }
 
 @media (max-width: 910px) {
+
+
+    
+
     #grid-cart .produtos-cart {
         width: 500px;
-        margin: 0 2px;
+       
+        padding: 0;
     }
 
     #grid-cart .produtos-cart li a {
