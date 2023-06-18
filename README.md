@@ -6,7 +6,7 @@
   <li>Gabriel Ferreira 
   <li>Lucas Prado 
   <li>Robson Lazaro 
-  <li>Vinicius 
+  <li>Vinicius Lino
  
 </ul>
 <h3> https://florestropicais.netlify.app/index.html </h3>
