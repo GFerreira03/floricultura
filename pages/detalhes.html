@@ -16,7 +16,9 @@
 <body>
 
     <div id="navBar" class="include" path="./navBar.html"></div>\
-    <div class="gtranslate_wrapper"></div>
+    <ul class="flags" style="justify-content: flex-end; padding-right: 5rem">
+        <div class="gtranslate_wrapper"></div>
+    </ul>
 
     <section class="detalhes-flor">
         <div class="detalhes-flor-main">
@@ -56,7 +58,7 @@
 
     <div class="access-configs">
         <img id="theme-toggle" src="../assets/icons/dark-theme.svg" alt="">
-        <img src="../assets/icons/resize.png" alt="">
+        <img id="font-toggle" src="../assets/icons/resize.png" alt="">
     </div>
 
     <footer id="bottom">
@@ -71,11 +73,12 @@
     </footer>
 
     <!-- Pra traduzir -->
-    <script>window.gtranslateSettings = { "default_language": "bg", "languages": ["it", "es", "pt", "en"], "wrapper_selector": ".gtranslate_wrapper", "alt_flags": { "en": "usa", "pt": "brazil" } }</script>
+    <script>window.gtranslateSettings = { "default_language": "pt", "languages": ["it", "es", "pt", "en"], "wrapper_selector": ".gtranslate_wrapper", "alt_flags": { "en": "usa", "pt": "brazil" } }</script>
     <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
-    
+
     <script src="../scripts/darktheme.js"></script>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/upscaleFont.js"></script>
 </body>
 
 </html>
