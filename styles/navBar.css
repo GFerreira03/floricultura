@@ -9,6 +9,28 @@ a.nav-link {
     text-align: right;
 }
 
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flags{
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin: 0;
+}
+
+.flags li{
+    list-style: none;
+}
+
+
 #bg-navbar {
     background-color: var(--primary-color);
 }
